@@ -1,0 +1,35 @@
+﻿@model Models.Framework.KHUNHA
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Boarder/Views/Shared/_LayoutBoarder.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KHUNHA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TENKHU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENKHU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOTAKHAC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOTAKHAC)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MAKHU }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
